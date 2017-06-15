@@ -7,6 +7,10 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 <link href="css/kkg.css" rel="stylesheet">
 <link href="css/color.css" rel="stylesheet">
+<link href="css/clusterize.css" rel="stylesheet">
+
+
+
 
 </head>
 <span style="font-size: 3em;color: #888;"></span><span style="font-size: 1em;color:#888;float:right;">2017-06-15</span><br>
@@ -15,6 +19,9 @@
 <div style="clear: both;"><br><hr><br></div>
 <div style="text-align:center">
 <h4 style="color:#888;">6355 total unique kanji</h4>
+<div id="scrollArea" class="clusterize-scroll">
+  <div id="contentArea" class="clusterize-content">
+		<div class="clusterize-no-data">
 <div class="divTable">
 <div class="divTableBody">
 <div class="divTableRow">
@@ -6631,5 +6638,18 @@
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+<script src="js/clusterize.min.js"></script>
+
+<script>
+var data = ['<div>…</div>', '<div>…</div>', …];
+var clusterize = new Clusterize({
+  rows: data,
+  scrollId: 'scrollArea',
+  contentId: 'contentArea'
+});
+</script>
 </body>
 </html>
